@@ -101,7 +101,7 @@ if st.button("🚀 Predict Maturity"):
         "humidity": hum
     }
     try:
-        response = requests.post("https://maize_prediction-apps.onrender.com/predict", json=data)
+        response = requests.post("https://maize-prediction-apps.onrender.com", json=data)
         result = response.json()
         if "prediction" in result:
             prediction = result["prediction"]
